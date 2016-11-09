@@ -1,14 +1,12 @@
-import { 
-  Component, 
-  OnInit, 
-  Renderer, 
-  HostBinding, 
-  transition, 
-  animate, 
-  state, 
-  trigger, 
+import {
+  Component,
+  OnInit,
+  HostBinding,
+  transition,
+  animate,
+  state,
+  trigger,
   style,
-  Input
 } from '@angular/core';
 
 @Component({
@@ -25,15 +23,12 @@ import {
   ]
 })
 export class SidenavComponent implements OnInit {
-  // _opened: boolean = false;
   isOpen;
-  @Input() backdrop;
 
   constructor() { }
 
   ngOnInit() {
-    console.log(this.backdrop);
-    this.backdrop.classList.add('sidenav-backdrop');
+    // this.backdrop.classList.add('sidenav-backdrop');
   }
 
   open() {

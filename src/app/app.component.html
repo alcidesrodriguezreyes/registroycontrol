@@ -1,7 +1,9 @@
 <app-toolbar>
-  <button (click)="sidenav.open()">open</button>
+  <button (click)="sidenav.open()" class="material-icons">menu</button>
 </app-toolbar>
-<div class="container" #container>
-  <app-sidenav #sidenav [backdrop]="container">
-  </app-sidenav>
+<div class="container">
+  <app-sidenav-layout>
+    <app-sidenav #sidenav></app-sidenav>
+  </app-sidenav-layout>
+  
 </div>

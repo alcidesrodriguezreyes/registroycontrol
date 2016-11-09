@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { SidenavLayoutComponent } from './sidenav-layout/sidenav-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    SidenavLayoutComponent
   ],
   imports: [
     BrowserModule,
